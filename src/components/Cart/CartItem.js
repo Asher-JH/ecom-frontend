@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const CartItem = ({ itemId, image, price, name, quantity, subtotal }) => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  let img = `http://localhost:4000/uploads/${image}`;
+  let img = `https://ecom-backend-1.herokuapp.com/uploads/${image}`;
 
   const handleRemoveCartItem = () => {
     dispatch(actions.deleteFromCart(itemId));

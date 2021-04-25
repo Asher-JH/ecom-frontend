@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:4000/carts",
+  baseURL: "https://ecom-backend-1.herokuapp.com/carts",
   headers: {
     "Content-Type": "application/json",
   },

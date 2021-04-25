@@ -6,7 +6,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Item = ({ _id, image, name, description, price, category }) => {
   const dispatch = useDispatch();
-  let img = `http://localhost:4000/uploads/${image}`;
+  let img = `https://ecom-backend-1.herokuapp.com/uploads/${image}`;
 
   const handleAddToCart = () => {
     dispatch(
