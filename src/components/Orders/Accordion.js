@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 const OrderItem = ({ image, name, price, quantity }) => {
   const classes = useStyles();
-  let img = `https://ecom-backend-1.herokuapp.com//uploads/${image}`;
+  let img = `https://ecom-backend-1.herokuapp.com/uploads/${image}`;
 
   return (
     <div className={classes.root}>
